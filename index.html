@@ -10,18 +10,19 @@
   </head>
   <body>
     <div class="container">
+      <h1>Pizzeria Neapolitana</h1>
       <form class="pizzaCreation">
         <div class="pizzaSize">
           <h2>Please choose the size:</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="small" checked>
+              <input type="radio" name="size" value="small" >
               8" small pizza
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="medium">
+              <input type="radio" name="size" value="medium" checked>
               10" medium pizza
             </label>
           </div>
@@ -34,23 +35,28 @@
         </div>
         <div class="pizzaToppings">
           <h2>Please choose the toppings:</h2>
-          <input type="checkbox" name="chosen-toppings" value="mozzarella">mozzarella<br>
-          <input type="checkbox" name="chosen-toppings" value="parmesan">parmesan<br>
-          <input type="checkbox" name="chosen-toppings" value="tomatoes">tomatoes<br>
-          <input type="checkbox" name="chosen-toppings" value="spinach">spinach<br>
-          <input type="checkbox" name="chosen-toppings" value="onion">onion<br>
-          <input type="checkbox" name="chosen-toppings" value="pepper">red pepper<br>
-          <input type="checkbox" name="chosen-toppings" value="mushrooms">mushrooms<br>
-          <input type="checkbox" name="chosen-toppings" value="bacon">bacon<br>
-          <input type="checkbox" name="chosen-toppings" value="chicken">grilled chicken<br>
-          <input type="checkbox" name="chosen-toppings" value="beef">ground beef<br>
-          <input type="checkbox" name="chosen-toppings" value="sausage">italian sausage<br>
-          <input type="checkbox" name="chosen-toppings" value="bbq">bbq sauce<br>
-          <input type="checkbox" name="chosen-toppings" value="sriracha">sriracha sauce<br>
+          <h5>Cheese:</h5>
+          <input type="checkbox" name="chosen-toppings" value="mozzarella"> mozzarella<br>
+          <input type="checkbox" name="chosen-toppings" value="parmesan"> parmesan<br>
+          <h5>Vegetables:</h5>
+          <input type="checkbox" name="chosen-toppings" value="tomatoes"> tomatoes<br>
+          <input type="checkbox" name="chosen-toppings" value="spinach"> spinach<br>
+          <input type="checkbox" name="chosen-toppings" value="onion"> onion<br>
+          <input type="checkbox" name="chosen-toppings" value="pepper"> red pepper<br>
+          <input type="checkbox" name="chosen-toppings" value="mushrooms"> mushrooms<br>
+          <h5>Meat:</h5>
+          <input type="checkbox" name="chosen-toppings" value="bacon"> bacon<br>
+          <input type="checkbox" name="chosen-toppings" value="chicken"> grilled chicken<br>
+          <input type="checkbox" name="chosen-toppings" value="beef"> ground beef<br>
+          <input type="checkbox" name="chosen-toppings" value="sausage"> italian sausage<br>
+          <h5>Sauce:</h5>
+          <input type="checkbox" name="chosen-toppings" value="bbq"> bbq<br>
+          <input type="checkbox" name="chosen-toppings" value="sriracha"> sriracha<br>
         </div>
-        <button type="submit">Order your pizza!</button>
+        <button type="submit" class="btn btn-danger">Order your pizza!</button>
       </form>
       <div class="pizzaCost">
+        <h3>Total amount for your order: <span class="amount"></span></h3>
       </div>
     </div>
   </body>
