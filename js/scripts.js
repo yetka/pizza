@@ -48,7 +48,11 @@ $(document).ready(function() {
 
     $(".show-pizza").last().click(function() {
       $(".display-size").text(newPizza.size);
-      $(".display-toppings").text(newPizza.toppings.toString());
+      var toppingsString = "";
+      for (var i=0;i<newPizza.toppings.length; i++) {
+         toppingsString = toppingsString + newPizza.toppings[i] + ", ";
+      };
+      $(".display-toppings").text(toppingsString);
       $(".display-amount").text(newPizza.prize.toString());
       $("#display-pizza").show();
     });
