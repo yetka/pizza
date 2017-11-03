@@ -6,15 +6,18 @@ function Pizza (size) {
 
 Pizza.prototype.cost = function(size, toppings) {
   var amount = 7;
-  if (size==="small") {
-    return amount -= 2;
+  if (size === "small") {
+    return amount += toppings.length -2;
   }
-  if (size==="large") {
-    return amount += 2;
+  if (size === "large") {
+    return amount += toppings.length +3;
+  } else {
+    return amount += toppings.length;
   }
-  var toppingsAmount = toppings.length;
-  return amount += toppingsAmount;
-  }
+}
+
+
+
 
 
 
@@ -42,4 +45,4 @@ $(document).ready(function() {
     $(".pizzaCost").show();
 
   });
-});
+})
