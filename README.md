@@ -10,7 +10,8 @@ It is a website (using HTML, CSS, JavaScript and jQuery) for a pizza company whe
 ## Specifications
 * User can choose the size of pizza.
 * User can choose individual toppings that are listed.
-* After submitting the order, user can see the final cost.
+* Aplication allows users to order more than one pizza with different toppings.
+* Aplication displays the list of pizzas ordered as links that can be clicked for details.
 
 ## Setup/Installation Requirements
 
