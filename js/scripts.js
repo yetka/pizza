@@ -4,7 +4,17 @@ function Pizza (size) {
   this.toppings = [];
 }
 
-
+Pizza.prototype.cost = function(size, toppings) {
+  var amount = 7;
+  if (size==="small") {
+    return amount -= 2;
+  }
+  if (size==="large") {
+    return amount += 2;
+  }
+  var toppingsAmount = toppings.length;
+  return amount += toppingsAmount;
+  }
 
 
 
@@ -22,6 +32,10 @@ $(document).ready(function() {
       var toppingsChoice = $(this).val();
       newPizza.toppings.push(toppingsChoice);
     });
+
+    var pizzaCost = newPizza.cost(newPizza.size,newPizza.toppings);
+
+    $(".amount").text(pizzaCost);
 
 
     $("#pizzaCreation").hide();
