@@ -33,16 +33,13 @@ body {
   width: 500px;
 }
 
-.user-order {
-  display: none;
-}
-
-.user-order h3 {
+.user-order  {
   border: 5px solid black;
   margin: 10px;
   padding: 10px;
   background-color: #e62e00;
   width: 500px;
+  display: none;
 }
 
 .user-order img {
@@ -54,6 +51,9 @@ body {
   display: none;
 }
 
-/*.pizzaName:hover {
-  text-decoration: underline;
-}*/
+#display-pizza h3 {
+  border: 5px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ff4d4d;
+}
