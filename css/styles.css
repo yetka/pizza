@@ -1,15 +1,27 @@
-h1 {
+body {
+  background-color: #661a00
+}
+
+.intro img {
+  position: relative;
+  left: 15%;
+  margin: 20px;
+}
+
+.intro h1 {
   text-align: center;
   font-weight: bold;
-  color: red;
-  margin: 10px;
+  font-family: fantasy;
+  font-size: 60px;
+  color: black;
+  margin: 20px;
 }
 
 .pizzaSize {
   border: 5px solid black;
   margin: 10px;
   padding: 10px;
-  background-color: lightgray;
+  background-color: #e62e00;
   width: 500px;
 }
 
@@ -17,15 +29,23 @@ h1 {
   border: 5px solid black;
   margin: 10px;
   padding: 10px;
-  background-color: lightgray;
+  background-color: #e62e00;
   width: 500px;
 }
 
-.pizzaCost {
+.user-order {
+  display: none;
+}
+
+.user-order h3 {
   border: 5px solid black;
   margin: 10px;
   padding: 10px;
-  background-color: lightgray;
+  background-color: #e62e00;
   width: 500px;
-  display: none;
+}
+
+.user-order img {
+  width: 300px;
+  height: 300px;
 }

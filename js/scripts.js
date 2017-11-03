@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
     $("#pizzaCreation").hide();
-    $(".pizzaCost").show();
+    $(".user-order").show();
 
   });
 })
