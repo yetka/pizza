@@ -56,11 +56,19 @@
           <input type="checkbox" name="chosen-toppings" value="bbq"> bbq<br>
           <input type="checkbox" name="chosen-toppings" value="sriracha"> sriracha<br>
         </div>
-        <button type="submit" class="btn btn-danger">Order your pizza!</button>
+        <button type="submit" class="btn btn-danger">Add Pizza to your order!</button>
       </form>
       <div class="user-order">
-        <h3>Total amount for your order: <span class="amount"></span> $</h3>
-        <img src="img/pizza.png" alt="image of pizza">
+        <h2>Your order:</h2>
+        <p>(Click to see details)</p>
+        <ul><span class ="pizzaName"></span>
+        </ul>
+        <div id="display-pizza">
+          <h3>Your Pizza details:</h3>
+          <h4>Size: <span class ="display-size"></span></h4>
+          <h4>Toppings: <span class="display-toppings"></span></h4>
+          <h4>Prize: <span class="display-amount"></span> $</h4>
+        </div>
       </div>
     </div>
   </body>

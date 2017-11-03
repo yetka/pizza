@@ -49,3 +49,11 @@ body {
   width: 300px;
   height: 300px;
 }
+
+#display-pizza {
+  display: none;
+}
+
+/*.pizzaName:hover {
+  text-decoration: underline;
+}*/
